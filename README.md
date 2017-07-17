@@ -1,2 +1,2 @@
-# geoart
-Geometric Art repo
+# Generative Art
+Generative Art repo
