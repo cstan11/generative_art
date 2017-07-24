@@ -1,6 +1,6 @@
 // This code is a modification of the rcursive tree example in https://processing.org/examples/tree.html
-// things to do: Add display for A.
-// Do dynamic colour change for line drawing
+// things to do: figure out a way to do infinite loop for the b range e.g bounce between -100 to 100
+// things to do: simplify the maths calculation  
 
 
 float theta;
