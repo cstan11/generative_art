@@ -19,8 +19,8 @@ void draw() {
   if (b < 10000) {
     b = b + 10;
     //float a = (b / (float) width) * 90f;
-    float a = b / 40f;
-    //float a = (mouseX / (float) width) * 90f;
+    //float a = b / 40f;
+    float a = (mouseX / (float) width) * 90f;
     //float a = 173.125;
 
     // display counter
@@ -58,7 +58,7 @@ void branch(float h) {
   if (h > 4) {
     pushMatrix();    // Save the current state of transformation (i.e. where are we now)
     rotate(-theta);   // Rotate by theta
-    stroke(h*30, h*10, 0); // changing colour wheel via branching
+    stroke(h*20, h, 0); // changing colour wheel via branching
     line(0, h/3, h/3, 0);  // Draw the branch
     translate(-h/2, -h/2); // Move to the end of the branch
     branch(h);       // Ok, now call myself to draw two new branches!!
@@ -66,8 +66,8 @@ void branch(float h) {
 
     // Repeat the same thing, only branch off to the "left" this time!
     pushMatrix();
-    rotate(theta/8);
-    stroke(0, h*15, h*30); // changing colour wheel via branching
+    rotate(theta);
+    stroke(0, h, h*40); // changing colour wheel via branching
     line(h/3, 0, 0, h/3);
     translate(h/2, -h/2); // Move to the end of the branch
     branch(h);
